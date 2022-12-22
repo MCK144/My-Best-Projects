@@ -1,0 +1,97 @@
+<!doctype HTML>
+
+<html>
+
+
+<head> 
+	
+	<!-- the CSS code -->
+	<link rel = "stylesheet" type = "text/css" href = "style.css"> </link>
+	
+	<!-- the JavaScript Code -->
+	<script src = "code.js"> </script>
+	
+	
+	
+	
+	<title> JavaScript Game </title>
+	
+</head>
+
+
+<body>
+	<h1> Zombie Survival Game </h1>
+
+	<!--<canvas id = "canvas" width = "1000" height = "500"> </canvas>-->
+	<br><br>
+	
+	<form action = "" method = "">
+	
+		<label for = "num_zombies"> Enter number of Zombies: </label> 
+		<input id = "num_zombies" type = "text" value = ""> </input> 
+		
+		<br>
+		<label for = "zombie_speed"> Enter zombie speed: </label>
+		<input id = "zombie_speed" type = "text"value = ""> </input>
+		<br>
+		<button type = "button" id = "submit_button"> PLAY </button>
+	
+	</form>
+	
+	<p class = "note"> NOTE: if you can't enter the values above, try switching tabs and then coming back </p>
+
+	
+	<h2> Controls </h2>
+
+		<table>
+			<tr> 
+				<th> Up </th>
+				<th> Down </th>
+				<th> Left </th>
+				<th> Right </th>
+				<th> Fire </th>
+				<th> Restart </th>
+			</tr>
+			<tr>
+				<th> W </th>
+				<th> S </th>
+				<th> A </th>
+				<th> D </th>
+				<th> Space </th>
+				<th> TAB </th>
+			</tr>
+		
+		</table>
+	
+	<h2> Description </h2>
+		Enter the number of zombies to spawn and enter their speed. <br>
+		For the default values, click "PLAY" without entering values. <br>
+		To restart the gam
+	
+	<h2> Updates </h2>
+	
+		<list>
+			<li> 1.1 - zombies no longer disappear randomly</li>
+			<li> 1.2 - SPACE to fire, not E </li>
+		
+		
+		</list>
+	
+	
+	
+	<!-- stuff that doesn't get displayed on the browser -->
+	
+	
+	<img id = "player" src = "spritesheet.png" alt = "Man spritesheet"> </img> 
+	<img id = "zombie" src = "zombie.png" alt = "Zombie spritesheet"> </img>
+	
+	<audio id = "sound">
+		<source src = "gunshot.mp3" type = "audio/mp3">
+	</audio>
+	
+	
+
+</body>
+
+
+</html>

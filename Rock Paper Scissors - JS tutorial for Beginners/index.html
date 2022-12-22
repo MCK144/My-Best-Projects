@@ -1,0 +1,108 @@
+<!doctype HTML>
+
+
+<html>
+
+<head>
+	<title> Rock Paper Scissors </title>
+
+</head>
+
+
+<body style = "background-color: lightgray;">
+
+	<h1 style = "border: 2px solid red; text-align: center; background-color: yellow; color: magenta; font-size: 50px; font-family: helvetica;"> Rock Paper Scissors game </h1>
+
+
+	<div style="width: 300px; height: 300px; border: 4px dotted cyan; background-color: white;">
+
+	<p style = "color: blue; font-size: 25px; font-family: sans-serif;"> Thank you for playing Rock Paper Scissors. To play again
+		refresh the page.
+	</p>
+	
+	</div>
+
+	<script>
+		function getPlayerMove(){
+			var move = prompt("Enter r,p, or s:");
+			
+			if(move != "r" && move != "p" && move != "s"){
+				console.log("Invalid input, your move is now rock!");
+				return "r";
+			}
+
+			return move;
+		}
+	
+		function getComputerMove(){
+			var computerMove = "";
+			var num = Math.floor(Math.random() * 3 + 1);
+			// 1 - r   2 - p  3 - s
+			if (num == 1){
+				computerMove = "r";
+			}
+			else if (num == 2){
+				computerMove = "p";
+			}
+			else {
+				computerMove = "s";
+			}
+			
+			return computerMove;
+		}
+		
+		function calculateWinner(playerMove,computerMove){			
+			if (playerMove == "r"){
+				if (computerMove == "s"){
+					console.log("You win!");
+				}
+				else if (computerMove == "p"){
+					console.log("Computer wins");
+				}
+				else {
+					console.log("Tie!");
+				}
+			}
+			else if (playerMove == "p"){
+				if (computerMove == "r"){
+					console.log("You win!");
+				}
+				else if (computerMove == "s"){
+					console.log("Computer wins");
+				}
+				else{
+					console.log("Tie!");
+				}
+			}
+			else{
+				if (computerMove == "p"){
+					console.log("You win!");
+				}
+				else if (computerMove == "r"){
+					console.log("Computer wins");
+				}
+				else {
+					console.log("Tie");
+				}
+			}
+		}
+	
+	
+		var playerMove = getPlayerMove();
+		var computerMove = getComputerMove();
+		
+		console.log("Player move: " + playerMove);
+		console.log("Computer move: " + computerMove);
+		
+		calculateWinner(playerMove,computerMove);
+		
+	</script>
+
+
+</body>
+
+
+
+
+</html>
+

@@ -1,0 +1,32 @@
+*******************************************************************
+                    Instructions
+*******************************************************************
+
+WASD - movement
+
+
+Enemies:
+
+G - Guard
+S - Soldier
+A - Archer
+K - Knight 		(must aquire sword to kill)
+W - Warlord 	(must be killed by bow)
+D - Dragon 		(must be killed by arrow)
+
+x - dead body
+
+Items:
+
+/ - sword
+* - shield
+{ - bow
+| - arrows
+$ - money (has no purpose)
++ - medkit
+
+Attacking:
+
+To attack, move your player to a space occupied by an enemy. If nothing happens, the enemy
+has taken damage from you or blocked your attack.  Keep repeating this step until the enemy
+(or you) is killed.
