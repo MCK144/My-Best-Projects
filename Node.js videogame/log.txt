@@ -1,0 +1,29 @@
+192.63.62.32 - accessed on 2/18 at 2:21
+
+
+Resources I have used to build this:
+
+//why can Node.js not use Image class
+https://stackoverflow.com/questions/56306205/referenceerror-image-is-not-defined
+
+//creating dictionaries in JS
+https://pietschsoft.com/post/2015/09/05/javascript-basics-how-to-create-a-dictionary-with-keyvalue-pairs
+
+//getting mouse click position on canvas
+//https://thewebdev.info/2022/04/30/how-to-get-real-mouse-position-in-canvas-with-javascript/#:~:text=To%20get%20real%20mouse%20position%20in%20canvas%20with%20JavaScript%2C%20we,return%20%7B%20x%3A%20((evt.
+
+//resizing arrays (lists) in JS
+https://dirask.com/posts/JavaScript-resize-array-1w4z7D
+
+
+
+Key optimizations:
+
+1) Spatial partitioning
+
+2) camera culling 
+	- only sprites on the scene get drawn, this saves at least 100 draw calls every frame
+
+3) Entities have minimal data to limit what gets sent to the client
+
+4) all data is sent to the client at once

@@ -1,0 +1,16 @@
+body{
+  /*background-color: rgb(120,120,120);*/
+  background-color: black;
+}
+
+canvas{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(16,0,255);
+	border: 3px solid yellow;
+}
+
+img{
+	width: 0;
+}
